@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #777;
+    line-height: 1.7;
+}
+
+h1,
+h2
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #b86b25;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    transition: all 0, 4;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #F58d17;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover {
+    transition: all 0.1s;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1)
+}
+
+
+/* Btn*/
+.btn {
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-brand {
+    color: black;
+    font-weight: 500;
+    border-color: #F58d17;
+    background-color: #F58d17;
+}
+
+.btn-brand:hover {
+    border-color: #df841b;
+    background-color: #df841b;
+    color: black;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Slider*/
+.slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../Choc\ chip\ cookies.jpg);
+}
+
+.slide-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../Honey\ cornflakes.jpg);
+}
+
+.slide-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../Brownies.jpg);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+
+/* About Page*/
+#about.divider {
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #df841b;
+}
+
+/* Intro test*/
+.intro-text {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text p {
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+/* Shop */
+#shop .nav-pills .nav-link {
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 100px;
+}
+
+#shop .nav-pills .nav-link.active {
+    background-color: #df841b;
+    color: white;
+}
+
+.cookie-item .thumbs {
+    color: #ffb234
+}
+
+.brownie-item .thumbs {
+    color: #ffb234
+}
+
+.raya-specials-item .thumbs {
+    color: #ffb234
+}
+
+.alert {
+    width: 100%;
+    background: rgb(15, 255, 80);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    display: none;
+}
+
+#features {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../Honey-Cornflakes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 80px 0;
+}
+
+body {
+    background: #fff8f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+}
+
+ h2 {
+    color: #b86b25;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+label {
+    font-weight: 600;
+    color: #4a3c2f;
+}
+
+.btn-submit {
+    background-color: #b86b25;
+    border: none;
+    width: 100%;
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #94541a;
+}
+
+.alert-message {
+    width: 100%;
+    background: #df841b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
