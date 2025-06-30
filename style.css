@@ -211,10 +211,11 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+
+.body-text{
     margin: 0;
     padding: 0;
-    background: url('Cookisz\ Images/MiniCookiesBg.jpg');
+    background: url('Cookisz\ Images/MiniCookiesBg');
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -249,31 +250,21 @@ body {
 .terms-box h4 span{
     color: red
 }
-.buttons{
-    display:flex;
-    padding: 0 20px;
-    justify-content: space-between;
-}
-
-.btn{
-    height: 50px;
-    width: calc(50% - 6px);
-    border: 0;
-    border-radius: 6px;
-    font-size: 19px;
-    font-weight: 500;
-    color: #fff;
-    transition: .3s linear;
-    cursor: pointer;
-}
 
 .orange-btn{
-    background-color: #df841b;
+    background-color: #b86b25;
 }
-.gray-btn{
-    background-color: gray;
+.grey-btn{
+    background-color: #777;
 }
 
-.btn:hover{
-    opacity: .6;
+.btn-return{
+    height: 50px;
+    width:calc(50% -6px);
+    
 }
+.btn-back{
+    background-color: #b86b25;
+}
+
+
