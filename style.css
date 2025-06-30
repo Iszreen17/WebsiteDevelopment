@@ -210,3 +210,70 @@ label {
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('Cookisz\ Images/MiniCookiesBg.jpg');
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terms-box{
+    max-width: 460px;
+    background-color:#fffdd0;
+    color: black;
+    padding: 60px 30px;
+}
+
+.terms-text{
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: 	#5C4033;
+}
+
+.terms-text::-webkit-scrollbar{
+    width: 2px;
+    background-color:#5C4033 ;
+}
+
+.terms-text::-webkit-scrollbar-thumb{
+    background-color: #df841b;
+}
+
+.terms-box h4 span{
+    color: red
+}
+.buttons{
+    display:flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.btn{
+    height: 50px;
+    width: calc(50% - 6px);
+    border: 0;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.orange-btn{
+    background-color: #df841b;
+}
+.gray-btn{
+    background-color: gray;
+}
+
+.btn:hover{
+    opacity: .6;
+}
