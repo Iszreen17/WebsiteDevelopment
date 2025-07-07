@@ -10,46 +10,30 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
 
 // Reference database
-var signupFormDB = firebase.database().ref('signupForm');
+//var signupFormDB = firebase.database().ref('signupForm');
 
-// Handle form submit
-document.getElementById("signupForm").addEventListener("submit", submitForm);
+document.getElementById("signupForm").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-function submitForm(e) {
-    e.preventDefault();
+  const name = document.getElementById("signupName").value;
+  const email = document.getElementById("signupEmail").value;
+  const password = document.getElementById("signupPassword").value;
 
-    var name = getElementVal('signupName');
-    var email = getElementVal('signupEmail');
-    var password = getElementVal('signupPassword');
+  // Save user data to Firebase Realtime Database
+  const newUserRef = database.ref("members").push();
+  newUserRef.set({
+    name: name,
+    email: email,
+    password: password // Optional: remove this for security or hash it
+  });
 
-    saveMessages(name, email, password);
+  // Save login state to localStorage
+  localStorage.setItem("cookiszMember", "true");
+  localStorage.setItem("cookiszMemberName", name);
 
-    // Show alert
-    const messageEl = document.getElementById('signupMessage');
-    messageEl.classList.remove('d-none');
-    messageEl.classList.add('alert-success');
-    messageEl.textContent = "Signed up successfully!";
-
-    // Hide after 1s
-    setTimeout(() => {
-        messageEl.classList.add('d-none');
-    }, 1000);
-
-    // Reset form
-    document.getElementById("signupForm").reset();
-}
-
-const saveMessages = (name, email, password) => {
-    var newContactForm = signupFormDB.push();
-    newContactForm.set({
-        name: name,
-        email: email,
-        password: password
-    });
-};
-
-const getElementVal = (id) => {
-    return document.getElementById(id).value;
-};
+  // Redirect to index.html
+  window.location.href = "index.html";
+});

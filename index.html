@@ -472,8 +472,28 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+
+            // Check if user Signed up 
+            const isMember = localStorage.getItem("cookiszMember");
+            const memberName = localStorage.getItem("cookiszMemberName");
+
+            if (isMember === "true") 
+            {
+                // Hide Sign Up button
+                const signupBtn = document.querySelector('.btn.btn-outline-dark');
+                if (signupBtn) signupBtn.style.display = "none";
+
+                // Show Welcome message in navbar
+                const navbar = document.querySelector('.navbar-nav');
+                const li = document.createElement("li");
+                li.className = "nav-item";
+                li.innerHTML = `<a class="nav-link fw-bold text-success">Welcome, ${memberName || "Member"}!</a>`;
+                navbar.appendChild(li);
+            }
+        </script>
+
+
 
     <!--FAQs Page-->
     <!-- FAQs Section -->
