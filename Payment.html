@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="PaymentStylesheet.css">
+</head>
+
+<body>
+  <div class="bill-container">
+    <form id="paymentForm">
+      <div class="bill-row">
+        <!-- Billing Address -->
+        <div class="bill-col">
+          <h3 class="Title">Billing Address</h3>
+
+          <div class="inputBox">
+            <span>Full Name :</span>
+            <input type="text" placeholder="Afiq Syauqee" required>
+          </div>
+
+          <div class="inputBox">
+            <span>Email :</span>
+            <input type="email" placeholder="example@example.com" required>
+          </div>
+
+          <div class="inputBox">
+            <span>Address :</span>
+            <input type="text" placeholder="Block-Street" required>
+          </div>
+
+          <div class="inputBox">
+            <span>City :</span>
+            <input type="text" placeholder="City" required>
+          </div>
+
+          <div class="flex">
+            <div class="inputBox">
+              <span>Zipcode :</span>
+              <input type="text" placeholder="123123" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Info -->
+        <div class="bill-col">
+          <h3 class="Title">Payment</h3>
+
+          <div class="inputBox">
+            <span>Cards Accepted:</span>
+            <img src="Card accepted.jpg" alt="Cards Accepted" style="width: 100px;">
+          </div>
+
+          <div class="inputBox">
+            <span>Name On Card :</span>
+            <input type="text" placeholder="Mr Afiq Syauqee" required>
+          </div>
+
+          <div class="inputBox">
+            <span>Card Number:</span>
+            <input type="number" placeholder="1234-5678-9012-3456" required>
+          </div>
+
+          <div class="inputBox">
+            <span>Expiry Month :</span>
+            <input type="text" placeholder="June" required>
+          </div>
+
+          <div class="inputBox">
+            <span>Zipcode :</span>
+            <input type="text" placeholder="123123" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Proceed to Payment" class="submit-btn">
+    </form>
+  </div>
+
+  <!-- Fake JS Confirmation -->
+  <!-- <script>
+    const form = document.getElementById('paymentForm');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Payment Successful! Thank you for your purchase.');
+      form.reset(); // Reset the form after submission
+    });
+  </script> -->
+</body>
+
+</html>

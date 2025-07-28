@@ -1,0 +1,94 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.bill-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h3.Title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.bill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bill-col {
+  flex: 1 1 45%;
+}
+
+/* Input box styling */
+.inputBox {
+  margin-bottom: 15px;
+}
+
+.inputBox span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.inputBox input:focus {
+  border-color: #007bff;
+}
+
+/* Card image */
+.inputBox img {
+  margin-top: 5px;
+  max-width: 150px;
+}
+
+/* Flex zip code box (optional) */
+.flex {
+  display: flex;
+  gap: 15px;
+}
+
+/* Submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
