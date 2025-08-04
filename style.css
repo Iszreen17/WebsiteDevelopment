@@ -197,15 +197,12 @@ label {
 }
 
 .alert-message {
-    width: 100%;
-    background: #df841b;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    display: none;
+  display: none;
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
 }
+
 
 html {
     scroll-behavior: smooth;

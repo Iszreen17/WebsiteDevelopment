@@ -47,9 +47,42 @@
       </div>
 
       <button type="submit" class="btn btn-submit-order">Submit Order</button>
-       <div class="alert-message">Your order is received!</div>
+       <div class="alert-message" style="display: none;">Your order is received!</div>
     </form>
   </div>
+
+  <!-- Payment Section -->
+<div id="payment-section" style="display: none;">
+  <hr />
+  <h3 class="Title">Payment</h3>
+
+  <div class="inputBox">
+    <span>Cards Accepted:</span>
+    <img src="Card accepted.jpg" alt="Cards Accepted" style="width: 100px;">
+  </div>
+
+  <div class="inputBox">
+    <span>Name On Card :</span>
+    <input type="text" id="cardName" placeholder="Mr Afiq Syauqee" required>
+  </div>
+
+  <div class="inputBox">
+    <span>Card Number:</span>
+    <input type="text" id="cardNumber" placeholder="1234-5678-9012-3456" maxlength="19">
+  </div>
+
+  <div class="inputBox">
+    <span>Expiry Month :</span>
+    <input type="text" id="expiryMonth" placeholder="June" required>
+  </div>
+
+  <div class="inputBox">
+    <span>Zipcode :</span>
+    <input type="text" id="paymentZip" placeholder="123123" required>
+  </div>
+
+  <button class="submit-btn" onclick="handlePayment()">Proceed to Payment</button>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+9oYtRQ5idFk6qELPhG9FZLJQ02hk" crossorigin="anonymous">
