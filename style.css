@@ -265,3 +265,17 @@ html {
 }
 
 
+#payment-section input::placeholder {
+  color: #aaa;
+}
+
+#payment-section {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
